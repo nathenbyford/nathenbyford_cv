@@ -2,8 +2,7 @@
 author: Nathen Byford
 title: Statistical Consultant
 format:
-  classic-cv-pdf: 
-    keep-md: true
+  classic-cv-pdf: default
 cvfooter:
   left: "natebyford.com"
   right: "github.com/nathenbyford"
