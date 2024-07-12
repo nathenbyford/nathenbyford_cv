@@ -1,0 +1,76 @@
+---
+author: Nathen Byford
+title: Statistical Consultant
+format:
+  classic-cv-pdf: 
+    keep-md: true
+cvfooter:
+  left: "natebyford.com"
+  right: "github.com/nathenbyford"
+cvcolor: 58748F #without `#`
+cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvmeta:
+  - title: Status
+    left: Statistical Consultant for Statistical Consulting Center, Baylor University
+    right: Waco, Texas
+  - title: Field
+    left: Data Science, Statistical Analysis
+    right: natebyford.com
+  - title: Techs
+    left: R, bash, Python, Julia
+    right: nate@natebyford.com
+execute:
+  echo: false
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, details) {
+
+    command_start <- "\\cvevent"
+
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}")
+    
+    tbl[[details]] <- sapply(tbl[[details]], function(x) paste0("{", x, "}", collapse = ","))
+    res <- paste0(res, "{",tbl[[details]],"}")
+
+    cat(res, sep = "\n")
+}
+```
+
+# Summary
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+# Experience
+
+
+```{r}
+#| label: experience
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details, ~tasks,
+    "Statistical Consultant", "Statistical Consulting Center, Baylor University", "Sep. 2023 - Present",
+    "Department of Statistical Sciences", c("Perform statistical analysis for diverse range of clients and projects", "Analyses of large scale and unstructured data sets with R and Bash", "Present restults in clear and elementary manner for clients"),
+    "Graduate Teaching Assistant", "Baylor Univeristy", "Aug. 2022 - Aug. 2024", "Chair of Social Networks", c("Teach suplimental instruction sessions for introduction to statistics", "Hold office hours for introcutory statistics and statistical methods", "Grade homework, quizzes, and exams"),
+    "Undergraduate Researcher", "Oregon State University", "June 2021 - Aug. 2021", "Department of Statistics", c("Developing new methods to test for Benford's law", "Implementing methods in R", "Compared tests for greatest power and error rate", "Also looked into Benfor's law in english words"),
+    "Data Science Fellow", "Baylor University", "June 2020 - Aug. 2020", "MoWaTER Project", c("Worked directly with stakeholders at Denver Water to analyze effectivnes and efficiency of water filtration", "Produce statistical analysis and interpret results")
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
+```
+
+# Education
+
+```{r }
+#| label: education
+#| output: asis
+tibble::tribble(
+    ~degree, ~uni, ~loc, ~dates, ~details,
+    "Ph.D. in Statistical Science", "Baylor University", "Waco, Texas", "Aug. 2022 - Aug. 2026 (Present)", c("Project: Correcting under-reporting in over-dispersed spatial count data", "Developing and implementing Bayesian method to model under-reported and over-dispersed spatial counts"),
+    "Master of Science in Statistical Science", "Baylor University", "Waco, Texas", "Aug. 2022 - Dec. 2023", c("Project: Anomaly Detection in Time Series Data", "Focus on Statistical Methods, Mathematical Statistics, and Computational Statistics.")
+) |>
+    cvevents(when = "dates", what = "degree", where = "loc", details = "details")
+```
