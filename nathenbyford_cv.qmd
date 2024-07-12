@@ -16,7 +16,7 @@ cvmeta:
     left: Data Science, Statistical Analysis
     right: natebyford.com
   - title: Techs
-    left: R, bash, Python, Julia
+    left: R, bash, Python, Regression, Machine Learning
     right: nate@natebyford.com
 execute:
   echo: false
@@ -42,7 +42,7 @@ cvevents <- function(tbl, when, what, where, details) {
 
 # Summary
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Ph.D. student at Baylor University working on projects in spatial statistics, anomaly detection, bayesian modeling, and computational statistics. In addition to working on research I also work for the statistical consulting center helping clients from a wide range of fields from social work to geosciences. Experienced in data manipulation, visualization, and multiple modeling techniques.
 
 # Experience
 
