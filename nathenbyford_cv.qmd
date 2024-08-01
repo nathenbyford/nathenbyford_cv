@@ -13,11 +13,11 @@ cvmeta:
     left: Statistical Consultant for Statistical Consulting Center, Baylor University
     right: Waco, Texas
   - title: Field
-    left: Data Science, Statistical Analysis
+    left: Data Science, Statistical Analysis, Spatial Statistics
     right: natebyford.com
   - title: Techs
-    left: R, bash, Python, Regression, Machine Learning
-    right: nate@natebyford.com
+    left: R, bash, Python, Regression Modeling, Machine Learning
+    right: nathenbyford@gmail.com
 execute:
   echo: false
 ---
@@ -69,7 +69,8 @@ tibble::tribble(
 tibble::tribble(
     ~degree, ~uni, ~loc, ~dates, ~details,
     "Ph.D. in Statistical Science", "Baylor University", "Waco, Texas", "Aug. 2022 - Aug. 2026 (Present)", c("Project: Correcting under-reporting in over-dispersed spatial count data", "Developing and implementing Bayesian method to model under-reported and over-dispersed spatial counts"),
-    "Master of Science in Statistical Science", "Baylor University", "Waco, Texas", "Aug. 2022 - Dec. 2023", c("Project: Anomaly Detection in Time Series Data", "Focus on Statistical Methods, Mathematical Statistics, and Computational Statistics.")
+    "Master of Science in Statistical Science", "Baylor University", "Waco, Texas", "Aug. 2022 - Dec. 2023", c("Project: Anomaly Detection in Time Series Data", "Focus on Statistical Methods, Mathematical Statistics, and Computational Statistics.",
+    "Bachelor of Science in Statistical Science", "Baylor University", "Waco, Texas", "Aug. 2019 - May 2022")
 ) |>
     cvevents(when = "dates", what = "degree", where = "loc", details = "details")
 ```
