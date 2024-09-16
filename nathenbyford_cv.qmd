@@ -79,7 +79,7 @@ tibble::tribble(
 
 # Interdisciplinary Collaborations
 ```{r}
-#| label: projects
+#| label: colabs
 #| output: asis
 tibble::tribble(
     ~project, ~institution, ~date, ~details,
