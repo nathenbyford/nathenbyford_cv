@@ -84,7 +84,7 @@ tibble::tribble(
     ~project, ~institution, ~date, ~details,
     "Spatial Under-Reporting of COVID-19", "Spatial Statistics final project", "May 2024", c("Project: Correcting under-reporting in over-dispersed spatial count data", "Developing and implementing Bayesian method to model under-reported and over-dispersed spatial counts"),
     "Anomaly Detection in Time Series Data", "Baylor University", "Dec. 2023", c("Anomaly detection using data driven methods", "Methods include; regression leverage points, STL, neural network, and isolation forest"),
-    "Capstone project (Planarian Growth)", "Baylor University", "May 2022", c("Worked with freshmen in BIO 1406 as statistical consultant", "Analyzed the growth of planarian based on light exposure", "Guided students from experimental design through to presentation of results"),
+    "Capstone project (Planarian Growth)", "Baylor University", "May 2022", c("Worked with freshmen in BIO 1406 class as statistical consultant", "Analyzed the growth of planarian based on light exposure", "Guided students from experimental design through to presentation of results"),
     "Football Analytics Blitz", "Syracuse University", "Feb. 2022", c("Competed with a team of Baylor sports analytics club members", "Presented a defensive scheme against the 2021 Kansas City Chiefs offense to panel of experts", "Utilized statistical analysis to build defensive plan")
 ) |>
     cvevents(when = "date", what = "project", where = "institution", details = "details")
