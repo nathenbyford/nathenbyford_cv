@@ -13,11 +13,11 @@ cvmeta:
     left: Statistical Consultant for Statistical Consulting Center, Baylor University
     right: Waco, Texas
   - title: Field
-    left: Data Science, Statistical Analysis
+    left: Data Science, Statistical Analysis, Spatial Statistics
     right: natebyford.com
   - title: Techs
-    left: R, bash, Python, Regression, Machine Learning
-    right: nate@natebyford.com
+    left: R, bash, Python, Regression Modeling, Machine Learning
+    right: nathenbyford@gmail.com
 execute:
   echo: false
 ---
@@ -42,7 +42,7 @@ cvevents <- function(tbl, when, what, where, details) {
 
 # Summary
 
-Ph.D. student at Baylor University working on projects in spatial statistics, anomaly detection, bayesian modeling, and computational statistics. In addition to working on research I also work for the statistical consulting center helping clients from a wide range of fields from social work to geosciences. Experienced in data manipulation, visualization, and multiple modeling techniques.
+Ph.D. student at Baylor University working on projects in spatial statistics, anomaly detection, bayesian modeling, and computational statistics. In addition to working on research I also work for the statistical consulting center helping clients from a wide range of fields from social work to geosciences. Experienced in data manipulation, data visualization, and multiple modeling techniques.
 
 # Experience
 
@@ -55,7 +55,7 @@ tibble::tribble(
     "Statistical Consultant", "Statistical Consulting Center, Baylor University", "Sep. 2023 - Present",
     "Department of Statistical Sciences", c("Perform statistical analysis for diverse range of clients and projects", "Analyses of large scale and unstructured data sets with R and Bash", "Present restults in clear and elementary manner for clients"),
     "Graduate Teaching Assistant", "Baylor Univeristy", "Aug. 2022 - Aug. 2024", "Chair of Social Networks", c("Teach suplimental instruction sessions for introduction to statistics", "Hold office hours for introcutory statistics and statistical methods", "Grade homework, quizzes, and exams"),
-    "Undergraduate Researcher", "Oregon State University", "June 2021 - Aug. 2021", "Department of Statistics", c("Developing new methods to test for Benford's law", "Implementing methods in R", "Compared tests for greatest power and error rate", "Also looked into Benfor's law in english words"),
+    "Undergraduate Researcher", "Oregon State University", "June 2021 - Aug. 2021", "Department of Statistics", c("Developing new methods to test for Benford's law in real data", "Implementing methods in R", "Comparing tests for greatest power and lowest error rate", "Also look into Benfor's law in english words and texts"),
     "Data Science Fellow", "Baylor University", "June 2020 - Aug. 2020", "MoWaTER Project", c("Worked directly with stakeholders at Denver Water to analyze effectivnes and efficiency of water filtration", "Produce statistical analysis and interpret results")
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
@@ -68,13 +68,26 @@ tibble::tribble(
 #| output: asis
 tibble::tribble(
     ~degree, ~uni, ~loc, ~dates, ~details,
-    "Ph.D. in Statistical Science", "Baylor University", "Waco, Texas", "Aug. 2022 - Aug. 2026 (Present)", c("Project: Correcting under-reporting in over-dispersed spatial count data", "Developing and implementing Bayesian method to model under-reported and over-dispersed spatial counts"),
-    "Master of Science in Statistical Science", "Baylor University", "Waco, Texas", "Aug. 2022 - Dec. 2023", c("Project: Anomaly Detection in Time Series Data", "Focus on Statistical Methods, Mathematical Statistics, and Computational Statistics.")
+    "Ph.D. in Statistical Science", "Baylor University", "Waco, Texas", "Aug. 2022 - Present", c("Project: Correcting for under reporting in Bayesian Spatial Scan Statistics", "Developing and implementing Bayesian method to model under-reported and over-dispersed spatial counts"),
+    "Master of Science in Statistical Science", "Baylor University", "Waco, Texas", "Aug. 2022 - Dec. 2023", c("Project: Anomaly Detection in Time Series Data", "Focus on Statistical Methods, Mathematical Statistics, and Computational Statistics."),
+    "Bachelor of Science in Statistical Science", "Baylor University", "Waco, Texas", "Aug. 2019 - May 2022", c("Major Courses: Mathematical Statistics, Computational Statistics, Database Design.")
 ) |>
     cvevents(when = "dates", what = "degree", where = "loc", details = "details")
 ```
 
 {{< pagebreak >}}
+
+# Interdisciplinary Collaborations
+```{r}
+#| label: colabs
+#| output: asis
+tibble::tribble(
+    ~project, ~institution, ~date, ~details,
+    "Analysis of Results for Social Work Dissertation", "Consulting project", "Dec. 2023 - Apr. 2024", c("Work alongside PhD candidate in Social Work to complete statistical analysis for dissertation.", "Analyze survey results with descriptive statistics and logistic regression with model selection", "Communicate results clearly to client along with methods")
+) |>
+    cvevents(when = "date", what = "project", where = "institution", details = "details")
+```
+
 
 # Projects
 ```{r}
@@ -84,8 +97,7 @@ tibble::tribble(
     ~project, ~institution, ~date, ~details,
     "Spatial Under-Reporting of COVID-19", "Spatial Statistics final project", "May 2024", c("Project: Correcting under-reporting in over-dispersed spatial count data", "Developing and implementing Bayesian method to model under-reported and over-dispersed spatial counts"),
     "Anomaly Detection in Time Series Data", "Baylor University", "Dec. 2023", c("Anomaly detection using data driven methods", "Methods include; regression leverage points, STL, neural network, and isolation forest"),
-    "Capstone project (Planarian Growth)", "Baylor University", "May 2022", c("Worked with freshmen in BIO 1406 class as statistical consultant", "Analyzed the growth of planarian based on light exposure", "Guided students from experimental design through to presentation of results"),
-    "Football Analytics Blitz", "Syracuse University", "Feb. 2022", c("Competed with a team of Baylor sports analytics club members", "Presented a defensive scheme against the 2021 Kansas City Chiefs offense to panel of experts", "Utilized statistical analysis to build defensive plan")
+    "Capstone project (Planarian Growth)", "Baylor University", "May 2022", c("Worked with freshmen in BIO 1406 as statistical consultant", "Analyzed the growth of planarian based on light exposure", "Guided students from experimental design through to presentation of results")
 ) |>
     cvevents(when = "date", what = "project", where = "institution", details = "details")
 ```
