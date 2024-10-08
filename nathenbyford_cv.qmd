@@ -53,10 +53,10 @@ PhD student at Baylor University working on projects in spatial statistics, anom
 tibble::tribble(
     ~role, ~institution, ~dates, ~details, ~tasks,
     "Statistical Consultant", "Statistical Consulting Center, Baylor University", "Sep. 2023 - Present",
-    "Department of Statistical Sciences", c("Perform statistical analysis for diverse range of clients and projects", "Analyses of large scale and unstructured data sets with R and Bash", "Present restults in clear and elementary manner for clients"),
-    "Graduate Teaching Assistant", "Baylor Univeristy", "Aug. 2022 - Aug. 2024", "Chair of Social Networks", c("Teach suplimental instruction sessions for introduction to statistics", "Hold office hours for introcutory statistics and statistical methods", "Grade homework, quizzes, and exams"),
-    "Undergraduate Researcher", "Oregon State University", "June 2021 - Aug. 2021", "Department of Statistics", c("Developing new methods to test for Benford's law in real data", "Implementing methods in R", "Comparing tests for greatest power and lowest error rate", "Also look into Benfor's law in english words and texts"),
-    "Data Science Fellow", "Baylor University and Denver Water", "June 2020 - Aug. 2020", "MoWaTER Project", c("Worked directly with stakeholders at Denver Water to analyze effectivnes and efficiency of water filtration", "Produce statistical analysis and interpret results")
+    "Department of Statistical Sciences", c("Perform statistical analysis for diverse range of clients and projects", "Analyses of large scale and unstructured data sets with R and Bash", "Present results in clear and elementary manner for clients"),
+    "Graduate Teaching Assistant", "Baylor Univeristy", "Aug. 2022 - Aug. 2024", "Chair of Social Networks", c("Teach supplemental instruction sessions for introduction to statistics", "Hold office hours for introductory statistics and statistical methods", "Grade homework, quizzes, and exams"),
+    "Undergraduate Researcher", "Oregon State University", "June 2021 - Aug. 2021", "Department of Statistics", c("Developing new methods to test for Benford's law in real data", "Implementing methods in R", "Comparing tests for greatest power and lowest error rate", "Also look into Benford's law in english words and texts"),
+    "Data Science Fellow", "Baylor University and Denver Water", "June 2020 - Aug. 2020", "MoWaTER Project", c("Worked directly with stakeholders at Denver Water to analyze effectiveness and efficiency of water filtration", "Produce statistical analysis and interpret results")
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
 ```
@@ -83,8 +83,8 @@ tibble::tribble(
 #| output: asis
 tibble::tribble(
     ~project, ~institution, ~date, ~details,
-    "Data Analysis of Anti-bacterial Coatings", "Department of Enviromental Science", "Current collaboration", c("Work with zero inflated positive data to determine differences in anti-baterial coatings", "Utilized an ordinal data model as traditional parametric approaches were ineffective due to non-normal distributions in the data"),
-    "Data Analysis for Presentation", "Department of Physical Therapy", "Mar. 2024 - Aug. 2024", c("Work with survey data from physical therapests to determine the most often taught and used outcome measures by teachers and clinicians.", "Worked with text data to clean up results and repeat responses."), "Survey Data Analysis for Dissertation", "Department of Social Work", "Dec. 2023 - Apr. 2024", c("Work alongside PhD candidate in Social Work to complete statistical analysis for dissertation.", "Analyze survey results with logistic regression with model selection")
+    "Data Analysis of Anti-bacterial Coatings", "Department of Environmental Science", "Current collaboration", c("Work with zero inflated positive data to determine differences in anti-bacterial coatings", "Utilized an ordinal data model as traditional parametric approaches were ineffective due to non-normal distributions in the data"),
+    "Data Analysis for Presentation", "Department of Physical Therapy", "Mar. 2024 - Aug. 2024", c("Work with survey data from physical therapists to determine the most often taught and used outcome measures by teachers and clinicians.", "Worked with text data to clean up results and repeat responses."), "Survey Data Analysis for Dissertation", "Department of Social Work", "Dec. 2023 - Apr. 2024", c("Work alongside PhD candidate in Social Work to complete statistical analysis for dissertation.", "Analyze survey results with logistic regression with model selection")
 ) |>
     cvevents(when = "date", what = "project", where = "institution", details = "details")
 ```
