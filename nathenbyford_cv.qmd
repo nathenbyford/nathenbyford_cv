@@ -1,6 +1,6 @@
 ---
 author: Nathen Byford
-title: Statistical Consultant
+title: Data Scientist Intern
 format:
   classic-cv-pdf: default
 cvfooter:
