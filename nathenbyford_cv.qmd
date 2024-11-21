@@ -1,10 +1,10 @@
 ---
 author: Nathen Byford
-title: Data Scientist Intern
+title: Statistics PhD Student
 format:
   classic-cv-pdf: default
 cvfooter:
-  left: "natebyford.com"
+  left: "www.natebyford.com"
   right: "github.com/nathenbyford"
 cvcolor: 58748F #without `#`
 cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
@@ -14,9 +14,9 @@ cvmeta:
     right: Waco, Texas
   - title: Field
     left: Data Science, Statistical Analysis, Spatial Statistics
-    right: natebyford.com
+    right: www.natebyford.com
   - title: Techs
-    left: R, bash, Python, Statistical Modeling, Machine Learning, Git
+    left: R, Python, Git, bash, Linux/Unix, Statistical Modeling, Machine Learning
     right: nathenbyford@gmail.com
 execute:
   echo: false
